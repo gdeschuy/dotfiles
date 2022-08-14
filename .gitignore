@@ -1,9 +1,9 @@
-plugin/packer_compiled.lua
 .bashrc
 .bash_history
 .bash_logout
 .cache
 .cargo
+.config/nvim/plugin/packer_compiled.lua
 .gitconfig
 .landscape
 .local

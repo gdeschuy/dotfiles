@@ -13,7 +13,7 @@ return require('packer').startup (function(use)
     use("wbthomason/packer.nvim")
 
     -- Color scheme
-    use{
+    use {
         "folke/tokyonight.nvim",
         config = function()
             require("gdeschuy.plugins.tokyonight").init()
@@ -33,9 +33,21 @@ return require('packer').startup (function(use)
     }
 
     -- Telescope
-    use { "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" }
+    use {
+        "nvim-telescope/telescope.nvim",
+        requires = "nvim-lua/plenary.nvim" 
+    }
+
+    -- Harpoon
+    use {
+        "ThePrimeagen/harpoon",
+        requires = "nvim-lua/plenary.nvim"
+    }
 
     -- Undo tree
     use("mbbill/undotree")
+
+    -- Devicons
+    use("kyazdani42/nvim-web-devicons")
 
 end)

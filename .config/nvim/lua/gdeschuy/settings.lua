@@ -1,4 +1,3 @@
--- General
 vim.opt.backup = false -- creates a backup file
 vim.opt.cmdheight = 1 -- height of the command bar
 vim.opt.errorbells = false -- sets the error bell
