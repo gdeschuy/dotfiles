@@ -9,5 +9,4 @@ apt-get update
 echo "### Installing packages ###"
 apt-get install -y fzf \
 	git \
-	neovim \
-	packer
+	neovim

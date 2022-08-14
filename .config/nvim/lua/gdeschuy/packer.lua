@@ -13,16 +13,29 @@ return require('packer').startup (function(use)
     use("wbthomason/packer.nvim")
 
     -- Color scheme
-    use("folke/tokyonight.nvim")
+    use{
+        "folke/tokyonight.nvim",
+        config = function()
+            require("gdeschuy.plugins.tokyonight").init()
+        end
+    }
 
     -- Git
-    use { "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" }
-    use("sindrets/diffview.nvim")
+    use {
+        "TimUntersberger/neogit", 
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "sindrets/diffview.nvim"
+        },
+        config = function()
+            require("gdeschuy.plugins.neogit").init()
+        end
+    }
 
     -- Telescope
     use { "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" }
 
-    -- Undo
+    -- Undo tree
     use("mbbill/undotree")
 
 end)

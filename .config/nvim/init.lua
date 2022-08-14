@@ -1,7 +1,10 @@
-require("plugins")
-require("neogit")
+require("gdeschuy/settings")
+require("gdeschuy/packer")
 
-vim.o.expandtab = true
-vim.o.shiftwidth = 4
-vim.o.softtabstop = 4
-vim.o.tabstop = 4
+-- Run PackerCompile after saving init.lua
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost init.lua source <afile> | PackerCompile
+  augroup end
+]])
