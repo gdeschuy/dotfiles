@@ -1,4 +1,3 @@
--- Harpoon
 vim.keymap.set("n", "<C-a>", function()
     require("harpoon.mark").add_file()
 end, { silent = true })
@@ -22,11 +21,3 @@ end, { silent = true})
 vim.keymap.set("n", "<C-m>", function()
     require("harpoon.ui").nav_file(4) 
 end, { silent = true})
-
--- Telescope
-vim.keymap.set("n", "<C-f>", function()
-    require("telescope.builtin").find_files()
-end, { noremap = true })
-
--- Undo Tree
-vim.api.nvim_set_keymap("n", "u", "<cmd>:UndotreeShow<CR>", { noremap = true })
