@@ -1,1 +1,15 @@
 plugin/packer_compiled.lua
+.bashrc
+.bash_history
+.bash_logout
+.cache
+.cargo
+.gitconfig
+.landscape
+.local
+.motd_shown
+.profile
+.ssh
+.sudo_as_admin_successful
+.vim
+.viminfo
