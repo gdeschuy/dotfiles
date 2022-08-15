@@ -40,6 +40,9 @@ return require('packer').startup (function(use)
         end
     }
 
+    -- Impatient
+    use("lewis6991/impatient.nvim")
+
     -- Lualine
     use {
         "nvim-lualine/lualine.nvim",
@@ -63,7 +66,7 @@ return require('packer').startup (function(use)
         requires = "nvim-lua/plenary.nvim"
     }
 
-    -- Undo tree
+    -- Undotree
     use("mbbill/undotree")
 
 end)

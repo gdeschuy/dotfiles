@@ -1,3 +1,4 @@
+require("impatient")
 require("gdeschuy/settings")
 require("gdeschuy/packer")
 
