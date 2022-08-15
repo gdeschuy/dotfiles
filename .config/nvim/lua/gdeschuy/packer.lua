@@ -31,9 +31,23 @@ return require('packer').startup (function(use)
     -- Diffview
     use {
         "sindrets/diffview.nvim",
-        requires = "nvim-lua/plenary.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "kyazdani142/nvim-web-devicons"
+        },
         config = function()
             require("gdeschuy.plugins.diffview").init()
+        end
+    }
+
+    -- Lualine
+    use {
+        "nvim-lualine/lualine.nvim",
+        requires = { 
+            "kyazdani42/nvim-web-devicons", opt = true 
+        },
+        config = function ()
+            require("gdeschuy.plugins.lualine").init()
         end
     }
 
