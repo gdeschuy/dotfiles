@@ -20,15 +20,12 @@ return require('packer').startup (function(use)
         end
     }
 
-    -- Git
+    -- Diffview
     use {
-        "TimUntersberger/neogit", 
-        requires = {
-            "nvim-lua/plenary.nvim",
-            "sindrets/diffview.nvim"
-        },
+        "sindrets/diffview.nvim",
+        requires = "nvim-lua/plenary.nvim",
         config = function()
-            require("gdeschuy.plugins.neogit").init()
+            require("gdeschuy.plugins.diffview").init()
         end
     }
 
@@ -46,8 +43,5 @@ return require('packer').startup (function(use)
 
     -- Undo tree
     use("mbbill/undotree")
-
-    -- Devicons
-    use("kyazdani42/nvim-web-devicons")
 
 end)
