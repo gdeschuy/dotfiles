@@ -20,6 +20,14 @@ return require('packer').startup (function(use)
         end
     }
 
+    -- Devicons
+    use {
+        "kyazdani42/nvim-web-devicons",
+        config = function()
+            require("gdeschuy.plugins.devicons").init()
+        end
+    }
+
     -- Diffview
     use {
         "sindrets/diffview.nvim",
